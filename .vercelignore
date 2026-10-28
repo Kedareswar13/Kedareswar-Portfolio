@@ -1,0 +1,5 @@
+.env*
+.vercel
+.gitignore
+README.md
+PERSONAL_LAPTOP_SETUP.md

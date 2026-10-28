@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pattapu Kedareswar · AI Engineer</title>
+  <meta name="description" content="Pattapu Kedareswar — AI Engineer building production agentic AI: LLM agents, MCP tools, LLM evaluation pipelines and full-stack products." />
+  <meta name="theme-color" content="#06060b" />
+  <meta property="og:title" content="Pattapu Kedareswar · AI Engineer" />
+  <meta property="og:description" content="I build AI agents — and the evals that keep them honest." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kedareswar.vercel.app/" />
+  <meta property="og:image" content="https://kedareswar.vercel.app/og-image.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="canonical" href="https://kedareswar.vercel.app/" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="is-loading">
+  <!-- Boot loader -->
+  <div id="loader" aria-hidden="true">
+    <div class="boot mono">
+      <p><span class="c-acc">$</span> init agent --name kedareswar</p>
+      <p class="dim">loading tools ........ <span class="ok">ok</span></p>
+      <p class="dim">connecting mcp ....... <span class="ok">ok</span></p>
+      <p class="dim">running evals ........ <span class="ok">pass</span></p>
+      <div class="boot-bar"><span></span></div>
+    </div>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a href="#home" class="logo" aria-label="Home">PK<span>.</span></a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Let's talk</a></li>
+      </ul>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <canvas id="neural" aria-hidden="true"></canvas>
+      <div class="hero-inner container">
+        <div class="hero-text">
+          <div class="status-pill reveal"><span class="pulse-dot"></span> AI Engineer @ RealPage · Open to opportunities</div>
+          <h1 class="hero-title reveal">
+            <span class="hi">Hi, I'm</span>
+            <span class="name gradient-text" data-scramble>Pattapu Kedareswar</span>
+          </h1>
+          <p class="hero-role reveal">
+            <span class="mono c-dim">&gt;</span> <span id="typed" class="mono"></span><span class="caret">_</span>
+          </p>
+          <p class="hero-sub reveal">
+            I build <strong>production AI agents</strong> that talk to real people across chat, SMS, email and voice —
+            and the <strong>evaluation systems</strong> that prove they behave correctly, release after release.
+          </p>
+          <div class="hero-cta reveal">
+            <a href="#projects" class="btn btn-primary magnetic">View my work <span class="arrow">→</span></a>
+            <a href="resume.pdf" class="btn btn-ghost magnetic" target="_blank" rel="noopener">Download résumé</a>
+          </div>
+          <div class="hero-social reveal">
+            <a href="https://github.com/Kedareswar13" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg></a>
+            <a href="https://www.linkedin.com/in/kedareswar-pattapu-0355bb254/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></a>
+            <a href="https://leetcode.com/u/Kedareswar13/" target="_blank" rel="noopener" aria-label="LeetCode"><svg viewBox="0 0 24 24"><path d="M13.48 0a1.37 1.37 0 0 0-.96.44L7.12 6.21l-.03.03-2.5 2.67a5.3 5.3 0 0 0-1.42 3.4c-.02.47.03.94.15 1.4a5.3 5.3 0 0 0 1.5 2.6l4.31 4.32a5.6 5.6 0 0 0 7.65.26l2.6-2.43a1.37 1.37 0 1 0-1.87-2l-2.6 2.43a2.84 2.84 0 0 1-3.84-.12l-4.3-4.32a2.55 2.55 0 0 1-.05-3.6l2.53-2.71 5.38-5.77A1.37 1.37 0 0 0 13.48 0Zm-2.87 13.84a1.37 1.37 0 1 0 0 2.74h9.16a1.37 1.37 0 1 0 0-2.74h-9.16Z"/></svg></a>
+            <a href="mailto:kedareswar.pattapu@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.3-.5 7.7 6.16L19.7 5H4.3ZM20 6.58l-7.38 5.9a1 1 0 0 1-1.24 0L4 6.58V18.5c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5V6.58Z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Agentic AI</span><span>OpenAI Agents SDK</span><span>LangGraph</span><span>MCP</span><span>LLM-as-a-Judge</span><span>RAG</span><span>Python</span><span>FastAPI</span><span>LangSmith</span><span>OpenTelemetry</span><span>GitHub Actions</span><span>React</span><span>Next.js</span><span>Node.js</span><span>PostgreSQL</span><span>Redis</span>
+        <span>Agentic AI</span><span>OpenAI Agents SDK</span><span>LangGraph</span><span>MCP</span><span>LLM-as-a-Judge</span><span>RAG</span><span>Python</span><span>FastAPI</span><span>LangSmith</span><span>OpenTelemetry</span><span>GitHub Actions</span><span>React</span><span>Next.js</span><span>Node.js</span><span>PostgreSQL</span><span>Redis</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <div class="section-head reveal">
+        <span class="section-index mono">01</span>
+        <h2 data-scramble>About me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo reveal tilt">
+          <div class="photo-ring"></div>
+          <picture>
+            <source srcset="profile.webp" type="image/webp" />
+            <img src="profile.jpg" alt="Portrait of Pattapu Kedareswar" width="640" height="800" loading="lazy" decoding="async" />
+          </picture>
+          <div class="photo-tag mono">// building agents that ship</div>
+        </div>
+        <div class="about-text reveal">
+          <p class="lead">
+            I'm an <strong>AI Engineer</strong> who loves the whole loop — <span class="hl">build</span> a feature,
+            <span class="hl">understand</span> exactly how it behaves inside an agent, then <span class="hl">prove</span> it works with evaluations.
+          </p>
+          <p>
+            At RealPage I work on a conversational leasing assistant that helps apartment prospects and residents over chat, SMS, email and voice.
+            I've shipped agent features, helped carry the platform from a LangChain/LangGraph stack onto the <strong>OpenAI Agents SDK</strong>,
+            reworked its <strong>MCP</strong> tool layer, and built the automated agent-check and LLM-evaluation systems that keep every release honest.
+          </p>
+          <p>
+            Before that, I spent my B.Tech at SRM University–AP building everything from full-stack social platforms to RAG assistants,
+            local-LLM privacy agents and high-throughput Java engines — and co-authored a peer-reviewed paper on deep-learning EEG biometrics,
+            published in Elsevier's <em>Array</em>. I'm looking for roles where I can
+            design, build and evaluate reliable LLM-powered systems at scale.
+          </p>
+          <div class="stats">
+            <div class="stat"><span class="num" data-count="1" data-suffix="+">0</span><span class="lbl">year building production AI</span></div>
+            <div class="stat"><span class="num" data-count="1">0</span><span class="lbl">Elsevier journal paper</span></div>
+            <div class="stat"><span class="num" data-count="250" data-prefix="~">0</span><span class="lbl">CI agent scenarios</span></div>
+            <div class="stat"><span class="num" data-count="9.24" data-decimals="2">0</span><span class="lbl">CGPA · B.Tech CSE</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section container">
+      <div class="section-head reveal">
+        <span class="section-index mono">02</span>
+        <h2 data-scramble>Experience</h2>
+      </div>
+
+      <div class="exp-card reveal">
+        <div class="exp-top">
+          <div>
+            <h3>AI Engineer <span class="at">@ RealPage</span></h3>
+            <p class="exp-meta mono">Leasing AI · Oct 2025 — Present</p>
+          </div>
+          <div class="exp-badges">
+            <span class="badge">Agentic AI</span><span class="badge">LLM Evals</span><span class="badge">Voice AI</span>
+          </div>
+        </div>
+        <p class="exp-story">
+          I joined while our conversational leasing assistant was mid-migration — moving from a LangChain/LangGraph orchestration
+          framework to a new architecture on the <strong>OpenAI Agents SDK</strong>. I worked right at that crossroads: building features on
+          both stacks, making sure nothing customers relied on was lost, and building the evaluation systems that prove it.
+        </p>
+
+        <div class="loop reveal" aria-label="My engineering loop: build, trace, evaluate, gate in CI, ship">
+          <div class="loop-step"><span class="ls-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span><span>Build</span></div>
+          <div class="loop-line"><i></i></div>
+          <div class="loop-step"><span class="ls-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span><span>Trace</span></div>
+          <div class="loop-line"><i></i></div>
+          <div class="loop-step"><span class="ls-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg></span><span>Evaluate</span></div>
+          <div class="loop-line"><i></i></div>
+          <div class="loop-step"><span class="ls-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span><span>Gate in CI</span></div>
+          <div class="loop-line"><i></i></div>
+          <div class="loop-step"><span class="ls-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span><span>Ship</span></div>
+        </div>
+
+        <div class="work-grid">
+          <article class="work glow-card reveal">
+            <div class="work-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3 4 7l4 4"/><path d="M4 7h16"/><path d="m16 21 4-4-4-4"/><path d="M20 17H4"/></svg></div>
+            <h4>Agents SDK migration</h4>
+            <p>Carried core agent capabilities — property Q&amp;A, pricing &amp; availability, tour scheduling, guest-card updates and staff handoffs — onto the OpenAI Agents SDK with non-destructive, production-safe changes.</p>
+          </article>
+          <article class="work glow-card reveal">
+            <div class="work-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></svg></div>
+            <h4>MCP tool layer</h4>
+            <p>Reworked the Model Context Protocol tool layer so agents call leasing, scheduling and prospect-profile services cleanly on the new infrastructure — retiring legacy adapters along the way.</p>
+          </article>
+          <article class="work glow-card reveal">
+            <div class="work-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></div>
+            <h4>Multi-tour-type support</h4>
+            <p>In-person, self-guided, virtual and third-party tours — each with its own rules. The agent offers only what a property supports, respects calendars and SMS consent, sends links once, and confirms only what was truly booked.</p>
+          </article>
+          <article class="work glow-card reveal">
+            <div class="work-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></svg></div>
+            <h4>Agent-check CI gate</h4>
+            <p>Designed an automated pipeline that runs ~250 realistic multi-turn scenarios against real property configs — a fresh prospect every run — as a pull-request gate, replacing much of the repetitive manual QA.</p>
+          </article>
+          <article class="work glow-card reveal">
+            <div class="work-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg></div>
+            <h4>LLM-as-a-Judge evals</h4>
+            <p>Built and grew evaluators &amp; datasets for pricing, Q&amp;A, guardrails, fair housing, tours and plan adherence — several suites from a handful of cases to 100+ — made judges consistent and added zero-LLM deterministic checks.</p>
+          </article>
+          <article class="work glow-card reveal">
+            <div class="work-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg></div>
+            <h4>Voice &amp; conversation quality</h4>
+            <p>The voice agent answers every part of a compound question, stops repeating confirmations and honours "a bit earlier" on reschedules; text channels collect contact details at the right moment. Plus voice suites for accents, language &amp; interruptions.</p>
+          </article>
+          <article class="work glow-card reveal">
+            <div class="work-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <h4>Fee transparency</h4>
+            <p>Helped the agent present rent with applicable fees, specials and custom disclaimers across multiple fee-display modes — clearly and consistently on every channel.</p>
+          </article>
+          <article class="work glow-card reveal">
+            <div class="work-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+            <h4>Trace-driven debugging</h4>
+            <p>Reconstruct agent behaviour from OpenTelemetry &amp; LangSmith traces and tool outputs to find root causes fast — so fixes target real defects, not symptoms.</p>
+          </article>
+        </div>
+
+        <div class="chips">
+          <span>Python</span><span>OpenAI Agents SDK</span><span>LangGraph</span><span>LangChain</span><span>MCP</span><span>LLM-as-a-Judge</span><span>LangSmith</span><span>OpenTelemetry</span><span>pytest</span><span>GitHub Actions</span><span>Redis</span><span>Twilio</span>
+        </div>
+      </div>
+
+      <div class="exp-card research reveal">
+        <div class="exp-top">
+          <div>
+            <h3>Research &amp; Publication <span class="at">· EEG Biometrics</span></h3>
+            <p class="exp-meta mono">SRM University–AP · under Dr. Banee Bandana Das · Sep 2025 — Jan 2026</p>
+          </div>
+          <div class="exp-badges"><span class="badge pub">Published · Sep 2026</span><span class="badge">Deep Learning</span></div>
+        </div>
+
+        <div class="paper glow-card">
+          <div class="paper-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm8 1.5V8h4.5L14 3.5ZM7 12v1.5h10V12H7Zm0 3.5V17h10v-1.5H7Zm0-7V10h5V8.5H7Z"/></svg>
+          </div>
+          <div class="paper-body">
+            <p class="paper-journal mono">Array · Elsevier · Journal article</p>
+            <h4 class="paper-title">Deep hybrid CNN–LSTM encoder architectures for cross-session EEG biometric identification</h4>
+            <p class="paper-authors">G. Ajay Kumar, <strong>Pattapu Kedareswar</strong>, S. M. Saifuddin Sumair, C. J. N. Gandhi, S. K. Ram, B. B. Das</p>
+            <div class="p-links">
+              <a class="p-link" href="https://www.sciencedirect.com/science/article/pii/S2590005626003942" target="_blank" rel="noopener">Read the paper ↗</a>
+              <a class="p-link" href="https://doi.org/10.1016/j.array.2026.101071" target="_blank" rel="noopener">DOI · 10.1016/j.array.2026.101071</a>
+            </div>
+          </div>
+        </div>
+
+        <p class="exp-story">
+          Can your brainwaves be your password — even when they're recorded on a different day? Our work tackles <strong>cross-session</strong>
+          EEG biometric identification, where a person's signals drift between recording sessions. I processed EEG recordings from the
+          BED dataset into subject-identification pipelines, then designed and evaluated multiple deep architectures —
+          <strong>CNN+LSTM</strong>, <strong>BiLSTM</strong> and <strong>autoencoder–CNN-LSTM hybrids</strong> — combining spatial features
+          (CNN encoders) with temporal dynamics (LSTMs) to improve identification accuracy for biometric authentication.
+        </p>
+        <div class="chips">
+          <span>Python</span><span>Deep Learning</span><span>CNN</span><span>LSTM / BiLSTM</span><span>Autoencoders</span><span>EEG signal processing</span><span>BED dataset</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <div class="section-head reveal">
+        <span class="section-index mono">03</span>
+        <h2 data-scramble>Projects</h2>
+      </div>
+      <p class="section-sub reveal">Things I've designed and built — from AI agents and RAG to high-throughput Java engines. Filter by what interests you.</p>
+
+      <div class="filters reveal" role="tablist">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="ai">AI &amp; LLM</button>
+        <button class="filter" data-filter="fullstack">Full-Stack</button>
+        <button class="filter" data-filter="systems">Systems &amp; Backend</button>
+        <button class="filter" data-filter="ml">ML &amp; Vision</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <div class="section-head reveal">
+        <span class="section-index mono">04</span>
+        <h2 data-scramble>Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group glow-card reveal">
+          <h4><span class="sg-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/></svg></span>AI &amp; Agents</h4>
+          <div class="chips"><span>OpenAI Agents SDK</span><span>LangGraph</span><span>LangChain</span><span>MCP</span><span>Prompt Engineering</span><span>RAG</span><span>Hybrid search (BM25 + RRF)</span><span>Cross-encoder re-ranking</span><span>ChromaDB</span><span>FAISS</span><span>Sentence-Transformers</span><span>Ollama</span><span>Gemini</span><span>Groq · Llama 3.3</span></div>
+        </div>
+        <div class="skill-group glow-card reveal">
+          <h4><span class="sg-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg></span>Evaluation &amp; Quality</h4>
+          <div class="chips"><span>LLM-as-a-Judge</span><span>Golden datasets</span><span>Held-out eval sets</span><span>Agent behaviour checks</span><span>Deterministic checks</span><span>RAG security</span><span>LangSmith</span><span>OpenTelemetry</span><span>pytest</span></div>
+        </div>
+        <div class="skill-group glow-card reveal">
+          <h4><span class="sg-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg></span>Languages</h4>
+          <div class="chips"><span>Python</span><span>Java</span><span>JavaScript</span><span>TypeScript</span><span>C++</span><span>SQL</span></div>
+        </div>
+        <div class="skill-group glow-card reveal">
+          <h4><span class="sg-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="8" x="2" y="2" rx="2"/><rect width="20" height="8" x="2" y="14" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg></span>Backend</h4>
+          <div class="chips"><span>FastAPI</span><span>Flask</span><span>Node.js</span><span>Express</span><span>REST APIs</span><span>Server-Sent Events</span><span>JWT Auth</span><span>Streamlit</span></div>
+        </div>
+        <div class="skill-group glow-card reveal">
+          <h4><span class="sg-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>Frontend</h4>
+          <div class="chips"><span>React</span><span>Next.js</span><span>Redux</span><span>Tailwind CSS</span><span>shadcn/ui</span><span>Vite</span><span>HTML / CSS</span></div>
+        </div>
+        <div class="skill-group glow-card reveal">
+          <h4><span class="sg-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg></span>Data &amp; DevOps</h4>
+          <div class="chips"><span>PostgreSQL</span><span>MongoDB</span><span>Redis</span><span>SQLite</span><span>Prisma</span><span>Docker</span><span>GitHub Actions</span><span>Vercel</span><span>Git</span></div>
+        </div>
+        <div class="skill-group glow-card reveal">
+          <h4><span class="sg-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></span>ML &amp; Vision</h4>
+          <div class="chips"><span>TensorFlow</span><span>CNN / LSTM</span><span>VGG-16</span><span>OpenCV</span><span>scikit-learn</span><span>scikit-image</span></div>
+        </div>
+        <div class="skill-group glow-card reveal">
+          <h4><span class="sg-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 10 5-10 5L2 7l10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg></span>CS Foundations</h4>
+          <div class="chips"><span>Data Structures</span><span>Algorithms</span><span>System Design</span><span>Concurrency</span><span>OOP</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section container">
+      <div class="section-head reveal">
+        <span class="section-index mono">05</span>
+        <h2 data-scramble>Education</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-card glow-card">
+            <p class="mono tl-date">Jun 2022 — May 2026</p>
+            <h4>B.Tech, Computer Science &amp; Engineering</h4>
+            <p>SRM University–AP · <strong class="gradient-text">CGPA 9.24 / 10</strong></p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-card glow-card">
+            <p class="mono tl-date">Jun 2020 — May 2022</p>
+            <h4>Intermediate</h4>
+            <p>Sri Srinivasa Gravity College, Vijayawada · <strong>95.9%</strong></p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-card glow-card">
+            <p class="mono tl-date">Certifications</p>
+            <h4>Always learning</h4>
+            <p>The Complete Full-Stack Web Development Bootcamp (Udemy) · The Joy of Computing Using Python · Java Programming — Complete Beginner to Advanced (GFG)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container contact">
+      <div class="contact-card reveal">
+        <span class="section-index mono">06 · contact</span>
+        <h2 class="contact-title"><span data-scramble>Let's build something</span> <span class="gradient-text">intelligent.</span></h2>
+        <p>Hiring for AI Engineering, GenAI, LLM evaluation or backend roles? I'd love to talk.</p>
+        <a href="mailto:kedareswar.pattapu@gmail.com" class="btn btn-primary btn-lg magnetic">kedareswar.pattapu@gmail.com <span class="arrow">↗</span></a>
+        <div class="contact-links">
+          <a href="tel:+919441754767" class="clink"><span class="mono">phone</span>+91 94417 54767</a>
+          <a href="https://www.linkedin.com/in/kedareswar-pattapu-0355bb254/" target="_blank" rel="noopener" class="clink"><span class="mono">linkedin</span>kedareswar-pattapu</a>
+          <a href="https://github.com/Kedareswar13" target="_blank" rel="noopener" class="clink"><span class="mono">github</span>Kedareswar13</a>
+          <a href="https://leetcode.com/u/Kedareswar13/" target="_blank" rel="noopener" class="clink"><span class="mono">leetcode</span>Kedareswar13</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p class="mono">© <span id="year"></span> Pattapu Kedareswar · built with care, shipped with evals.</p>
+    <a href="#home" class="mono to-top">back to top ↑</a>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
