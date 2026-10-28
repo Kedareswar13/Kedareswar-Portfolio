@@ -33,7 +33,7 @@
       metrics: [['96%', 'golden set'], ['85%', 'held-out set'], ['100%', 'right document'], ['~6 s', 'on a CPU laptop']],
       stack: ['Python', 'Flask', 'React', 'PostgreSQL', 'ChromaDB', 'Ollama · Qwen2.5', 'Cross-encoder', 'GLM-OCR', 'Docker', 'GitHub Actions'],
       // LINKS: paste the full URLs between the quotes. Empty = that button is hidden.
-      repo: '',   // GitHub, e.g. 'https://github.com/Kedareswar13/normbridge'
+      repo: 'https://github.com/Kedareswar13/NormBridge-AI.git',   // GitHub, e.g. 'https://github.com/Kedareswar13/normbridge'
       live: ''    // deployed app, e.g. 'https://normbridge.vercel.app'
     },
     {
@@ -49,7 +49,7 @@
       metrics: [['100%', 'red-flag recall'], ['0', 'PHI leaks'], ['10', 'eval suites'], ['221', 'tests']],
       stack: ['Python', 'LangGraph', 'FastMCP', 'FastAPI', 'SQLite', 'React + Vite', 'Ollama · Qwen2.5', 'SSE', 'Docker'],
       // LINKS: paste the full URLs between the quotes. Empty = that button is hidden.
-      repo: '',   // GitHub, e.g. 'https://github.com/Kedareswar13/careharbor'
+      repo: 'https://github.com/Kedareswar13/Careharbor-AI.git',   // GitHub, e.g. 'https://github.com/Kedareswar13/careharbor'
       live: ''    // deployed app, e.g. 'https://careharbor.example.com'
     },
     {
