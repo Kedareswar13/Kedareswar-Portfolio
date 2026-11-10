@@ -380,3 +380,17 @@ main, .footer, .nav { position: relative; z-index: 2; }
 .p-metric b { display: block; font-size: 18px; letter-spacing: -.3px; background: linear-gradient(90deg, var(--c1), var(--c2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .p-metric span { display: block; font-size: 10.35px; color: var(--muted); margin-top: 1.8px; }
 @media (max-width: 640px) { .p-metrics { grid-template-columns: repeat(2, 1fr); } }
+
+/* Research journey transition */
+
+.research-transition {
+  margin: 32px 0;
+  padding: 18px 24px;
+  border-left: 3px solid var(--accent, #facc15);
+  background: rgba(255, 255, 255, 0.025);
+  border-radius: 0 12px 12px 0;
+}
+
+.research-transition .exp-story {
+  margin: 0;
+}
